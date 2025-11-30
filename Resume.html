@@ -3,72 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Resume</title>
+    <title>Your Name - Online Resume</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">John Doe</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html" class="active">Resume</a></li>
+        <div class="logo">
+            <i class="fas fa-file-alt"></i> ONLINE RESUME
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resume.html">About Me</a></li>
+            <li><a href="#">Dropdown</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="#">Contact Me</a></li>
         </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
     </nav>
 
-    <section class="resume-section">
-        <div class="container">
-            <h1 class="resume-title">Professional Resume</h1>
-
-            <div class="section">
-                <h2>Education</h2>
-                <div class="item">
-                    <h3>B.Tech in Computer Science</h3>
-                    <p><strong>XYZ University</strong> | 2016 - 2020</p>
-                    <p>CGPA: 8.7/10</p>
-                </div>
-                <div class="item">
-                    <h3>Higher Secondary (12th)</h3>
-                    <p><strong>ABC School</strong> | 2013 - 2015</p>
-                    <p>Percentage: 92%</p>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="profession">Professional Webdeveloper</p>
+            <h1>Hello My Name Is<br><span>Your Name Here</span></h1>
+            <p class="description">
+                Get insights into how often your resume is viewed, which sections are attracting the most attention, 
+                and more. Adjust your content based on real-time data to optimize your chances.
+            </p>
+            <div class="buttons">
+                <a href="resume.pdf" class="btn download">Download</a>
+                <a href="mailto:you@example.com" class="btn hire">Hire Me</a>
             </div>
-
-            <div class="section">
-                <h2>Skills</h2>
-                <ul class="skills-list">
-                    <li>HTML5, CSS3, JavaScript</li>
-                    <li>React.js, Node.js</li>
-                    <li>Python, Java</li>
-                    <li>Git & GitHub</li>
-                    <li>Figma, Adobe XD</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>Projects</h2>
-                <div class="item">
-                    <h3>E-Commerce Website</h3>
-                    <p>Built a full-stack online store using MERN stack with payment integration.</p>
-                </div>
-                <div class="item">
-                    <h3>Task Management App</h3>
-                    <p>React-based app with drag-and-drop functionality and local storage.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>Full Stack Web Development - Udemy (2023)</li>
-                    <li>AWS Certified Cloud Practitioner (2024)</li>
-                </ul>
-            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.postimg.cc/0jQ8vT1Z/resume-stack.png" alt="Resume Stack">
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 John Doe. All rights reserved.</p>
-    </footer>
+    <!-- About Section (Bottom like your screenshot) -->
+    <section class="about-bottom">
+        <div class="about-img">
+            <img src="https://i.postimg.cc/85KxYk8Y/handsome-programmer.jpg" alt="Your Photo">
+        </div>
+        <div class="about-text">
+            <h3>Some Info</h3>
+            <h2>About Me</h2>
+            <p>
+                Hello, I'm <strong>Your Name</strong>, a passionate full-stack web developer & UI/UX enthusiast. 
+                I love creating modern, responsive, and user-friendly websites that make an impact. 
+                Currently pursuing B.Tech in Computer Science and always eager to learn new technologies.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
