@@ -3,89 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Bio Data</title>
+    <title>Your Name - Full Resume</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar">
-        <div class="logo">John Doe</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
+<body class="resume-body">
+    <nav class="navbar" style="background:white; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+        <div class="logo" style="color:#5d4a8c;"><i class="fas fa-file-alt"></i> ONLINE RESUME</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
         </ul>
     </nav>
 
-    <section class="hero">
-        <div class="container">
-            <img src="https://via.placeholder.com/200" alt="Profile Photo" class="profile-img">
-            <h1>John Doe</h1>
-            <p class="tagline">Full Stack Web Developer | UI/UX Enthusiast</p>
-            
-            <div class="bio">
-                <h2>Bio-Data</h2>
-                <table class="biodata-table">
-                    <tr><th>Full Name</th><td>John Michael Doe</td></tr>
-                    <tr><th>Date of Birth</th><td>15 March 1998</td></tr>
-                    <tr><th>Gender</th><td>Male</td></tr>
-                    <tr><th>Nationality</th><td>Indian</td></tr>
-                    <tr><th>Languages Known</th><td>English, Hindi, Spanish</td></tr>
-                    <tr><th>Email</th><td>john.doe@example.com</td></tr>
-                    <tr><th>Phone</th><td>+91 98765 43210</td></tr>
-                    <tr><th>Address</th><td>Mumbai, Maharashtra, India</td></tr>
-                    <tr><th>Hobbies</th><td>Coding, Cricket, Photography, Traveling</td></tr>
-                </table>
+    <div class="resume-container">
+        <h1 style="text-align:center; color:#5d4a8c; margin:30px 0;">Your Full Name</h1>
+        <p style="text-align:center;">Web Developer | your.email@gmail.com | +91 9876543210 | Mumbai, India</p>
+
+        <div class="resume-grid">
+            <div class="left">
+                <h2>Education</h2>
+                <hr>
+                <p><strong>B.Tech Computer Science</strong><br>XYZ College • 2021–2025<br>CGPA: 8.8/10</p><br>
+                
+                <h2>Skills</h2>
+                <hr>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React.js, Node.js</li>
+                    <li>Python, Java</li>
+                    <li>Git, GitHub</li>
+                    <li>Figma, Bootstrap</li>
+                </ul>
+
+                <h2>Certifications</h2>
+                <hr>
+                <ul>
+                    <li>Full Stack Web Development – Udemy</li>
+                    <li>Responsive Web Design – freeCodeCamp</li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <h2>Projects</h2>
+                <hr>
+                <div class="project">
+                    <h3>E-Commerce Website (MERN)</h3>
+                    <p>Full-stack shopping site with payment gateway and admin panel.</p>
+                </div>
+                <div class="project">
+                    <h3>Task Manager App</h3>
+                    <p>React + Firebase app with drag & drop and authentication.</p>
+                </div>
+
+                <h2>Experience</h2>
+                <hr>
+                <div class="project">
+                    <h3>Frontend Developer Intern</h3>
+                    <p>ABC Tech • June–Aug 2024<br>Built responsive landing pages using React.</p>
+                </div>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <p>© 2025 John Doe. All rights reserved.</p>
-    </footer>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Bio Data</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">John Doe</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
-    </nav>
-
-    <section class="hero">
-        <div class="container">
-            <img src="https://via.placeholder.com/200" alt="Profile Photo" class="profile-img">
-            <h1>John Doe</h1>
-            <p class="tagline">Full Stack Web Developer | UI/UX Enthusiast</p>
-            
-            <div class="bio">
-                <h2>Bio-Data</h2>
-                <table class="biodata-table">
-                    <tr><th>Full Name</th><td>John Michael Doe</td></tr>
-                    <tr><th>Date of Birth</th><td>15 March 1998</td></tr>
-                    <tr><th>Gender</th><td>Male</td></tr>
-                    <tr><th>Nationality</th><td>Indian</td></tr>
-                    <tr><th>Languages Known</th><td>English, Hindi, Spanish</td></tr>
-                    <tr><th>Email</th><td>john.doe@example.com</td></tr>
-                    <tr><th>Phone</th><td>+91 98765 43210</td></tr>
-                    <tr><th>Address</th><td>Mumbai, Maharashtra, India</td></tr>
-                    <tr><th>Hobbies</th><td>Coding, Cricket, Photography, Traveling</td></tr>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 John Doe. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 </html>
